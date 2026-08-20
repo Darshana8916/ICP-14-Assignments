@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Train Booking</title>
 </head>
 <body>
-    
+    <h1>Train Booking Form</h1>
+    <a href="index.html">Home</a> |
+    <a href="signup.html">Signup</a> |
+    <a href="hotel-booking.html">Hotel Booking</a>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            <label for="passengerName">Passenger Name:</label><br>
+            <input type="text" id="passengerName" name="passengerName" placeholder="Enter passenger name" required>
+        </p>
+        <p>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="1" max="120" required>
+        </p>
+        <p>
+            Gender:<br>
+            <input type="radio" id="maleTrain" name="gender" value="Male">
+            <label for="maleTrain">Male</label>
+            <input type="radio" id="femaleTrain" name="gender" value="Female">
+            <label for="femaleTrain">Female</label>
+            <input type="radio" id="otherTrain" name="gender" value="Other">
+            <label for="otherTrain">Other</label>
+        </p>
+        <p>
+            <label for="fromStation">From:</label><br>
+            <select id="fromStation" name="fromStation">
+                <option value="">Select Source</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+        </p>
+        <p>
+            <label for="toStation">To:</label><br>
+            <select id="toStation" name="toStation">
+                <option value="">Select Destination</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+        </p>
+        <p>
+            <label for="travelDate">Date of Journey:</label><br>
+            <input type="date" id="travelDate" name="travelDate" required>
+        </p>
+        <p>
+            <label for="classType">Class:</label><br>
+            <select id="classType" name="classType">
+                <option value="">Select Class</option>
+                <option value="Sleeper">Sleeper</option>
+                <option value="AC 3 Tier">AC 3 Tier</option>
+                <option value="AC 2 Tier">AC 2 Tier</option>
+                <option value="First Class">First Class</option>
+            </select>
+        </p>
+        <p>
+            <label for="tickets">Number of Tickets:</label><br>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" value="1">
+        </p>
+        <p>
+            <input type="checkbox" id="returnTicket" name="returnTicket" value="Yes">
+            <label for="returnTicket">Return Journey</label>
+        </p>
+        <p>
+            <input type="submit" value="Book Train">
+        </p>
+    </form>
 </body>
 </html>
