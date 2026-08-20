@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #111;
+    font-family: Arial, sans-serif;
+}
+.button-container {
+    background-color: white;
+    min-height: 250px;
+    padding: 105px 7px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.btn {
+    width: 230px;
+    height: 90px;
+    border: none;
+    font-size: 32px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 5px 7px 8px rgba(0, 0, 0, 0.45);
+    transition: 0.3s ease;
+}
+/* Button 1 */
+.btn1 {
+    background-color: #ef2227;
+    border-radius: 50px 50px 50px 0;
+}
+/* Button 2 */
+.btn2 {
+    background-color: #c2187a;
+    border-radius: 50px 0 50px 0;
+}
+/* Button 3 */
+.btn3 {
+    background-color: #dce900;
+    border-radius: 0 50px 0 0;
+}
+/* Button 4 */
+.btn4 {
+    background-color: #356b7d;
+    border-radius: 50px 50px 50px 0;
+}
+/* Button 5 */
+.btn5 {
+    background-color: #4d65aa;
+    border-radius: 50px 50px 0 50px;
+}
+/* Button 6 */
+.btn6 {
+    background-color: #80cc61;
+    border-radius: 50px 50px 50px 0;
+}
+/* Button 7 */
+.btn7 {
+    background-color: #49bea6;
+    border-radius: 0 50px 0 0;
+}
+/* Button 8 */
+.btn8 {
+    background-color: #e96512;
+    border-radius: 0;
+}
+/* Hover effect */
+.btn:hover {
+    transform: translateY(-8px);
+    box-shadow: 7px 12px 12px rgba(0, 0, 0, 0.5);
+}
+/* Click effect */
+.btn:active {
+    transform: translateY(2px);
+}
