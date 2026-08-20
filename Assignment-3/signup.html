@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Page</title>
 </head>
 <body>
-    
+    <h1>Signup Form</h1>
+    <a href="index.html">Home</a> |
+    <a href="hotel-booking.html">Hotel Booking</a> |
+    <a href="train-booking.html">Train Booking</a>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </p>
+        <p>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+        </p>
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </p>
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob">
+        </p>
+        <p>
+            Gender:<br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </p>
+        <p>
+            <label for="city">City:</label><br>
+            <select id="city" name="city">
+                <option value="">Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Pune">Pune</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+        </p>
+        <p>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </p>
+        <p>
+            <input type="submit" value="Sign Up">
+        </p>
+    </form>
 </body>
 </html>
