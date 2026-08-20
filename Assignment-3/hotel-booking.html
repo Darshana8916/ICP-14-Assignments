@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel Booking</title>
 </head>
 <body>
-    
+    <h1>Hotel Booking Form</h1>
+    <a href="index.html">Home</a> |
+    <a href="signup.html">Signup</a> |
+    <a href="train-booking.html">Train Booking</a>
+    <hr>
+    <form action="#" method="post">
+        <p>
+            <label for="guestName">Guest Name:</label><br>
+            <input type="text" id="guestName" name="guestName" placeholder="Enter guest name" required>
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+        </p>
+        <p>
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+        </p>
+        <p>
+            <label for="hotel">Select Hotel:</label><br>
+            <select id="hotel" name="hotel">
+                <option value="">Choose Hotel</option>
+                <option value="Royal Palace">Royal Palace</option>
+                <option value="Ocean View Resort">Ocean View Resort</option>
+                <option value="Green Valley Hotel">Green Valley Hotel</option>
+            </select>
+        </p>
+        <p>
+            <label for="roomType">Room Type:</label><br>
+            <select id="roomType" name="roomType">
+                <option value="">Select Room Type</option>
+                <option value="Single Room">Single Room</option>
+                <option value="Double Room">Double Room</option>
+                <option value="Suite">Suite</option>
+            </select>
+        </p>
+        <p>
+            <label for="checkIn">Check-in Date:</label><br>
+            <input type="date" id="checkIn" name="checkIn" required>
+        </p>
+        <p>
+            <label for="checkOut">Check-out Date:</label><br>
+            <input type="date" id="checkOut" name="checkOut" required>
+        </p>
+        <p>
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" min="1" max="10" value="2">
+        </p>
+        <p>
+            Add-ons:<br>
+            <input type="checkbox" id="breakfast" name="addons" value="Breakfast">
+            <label for="breakfast">Breakfast</label>
+            <input type="checkbox" id="pickup" name="addons" value="Airport Pickup">
+            <label for="pickup">Airport Pickup</label>
+            <input type="checkbox" id="parking" name="addons" value="Parking">
+            <label for="parking">Parking</label>
+        </p>
+        <p>
+            <label for="requests">Special Requests:</label><br>
+            <textarea id="requests" name="requests" rows="4" cols="40"
+                placeholder="Enter any special requests"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Book Hotel">
+        </p>
+    </form>
 </body>
 </html>
