@@ -1,0 +1,26 @@
+<!--Write a program to print odd numbers till n number, take n as input from user-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-17</title>
+</head>
+<body>
+    <script>
+        // Take input from user
+        let n = parseInt(prompt("Enter a number:"));
+        // Check if input is valid
+        if (isNaN(n) || n <= 0) {
+            console.log("Please enter a valid positive number.");
+        } else {
+            console.log("Odd numbers up to " + n + " are:");
+            for (let i = 1; i <= n; i++) {
+                if (i % 2 !== 0) {
+                    console.log(i);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
