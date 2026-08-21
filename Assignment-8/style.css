@@ -1,0 +1,11 @@
+/* External CSS */
+.external {
+    background-color: lightblue;
+    color: darkblue;
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    font-size: 20px;
+}
